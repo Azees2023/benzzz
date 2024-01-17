@@ -30,7 +30,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', TomoveTop);
     };
-  },[]);
+  });
   return (
     <div className="App h-full">
       <BrowserRouter>
