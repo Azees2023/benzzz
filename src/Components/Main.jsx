@@ -1,7 +1,7 @@
 import React from 'react'
 import CarCard from './CarCard'
 import Aclass from '../Class/Aclass'
-import Card from './Cardetails/Card'
+
 
 const Main = () => {
   return (
