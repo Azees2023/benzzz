@@ -2,6 +2,7 @@
 import React from 'react';
 import Car from '../Picture/pxfuel.jpg';
 import Genration from '../Picture/Genration';
+import { Link } from 'react-router-dom';
 // import Typography from '@mui/material/Typography';
 
 const Home = () => {
@@ -20,13 +21,17 @@ const Home = () => {
       </div>
 
       <div className='absolute w-full md:top-[310px] top-[163px] left-[-120px] z-40'>
-        <a href='/Contact'
+{/*         <a href='/Contact'
           title='Click-More'
           className='font-bold md:py-5  px-14 rounded bg-blue-600 hover:bg-blue-800 md:w-56 w-[190px] text-slate-200 ml-[50%] md:ml-36 md:mt-[-300px] z-40'
         >
           Explore
 
-        </a>
+        </a> */}
+        <Link title='CardList' to='/CarCard' aria-labelledby='dropdownNavbarLink'
+         className='font-bold md:py-5  px-14 rounded bg-blue-600 hover:bg-blue-800 md:w-56 w-[190px] text-slate-200 ml-[50%] md:ml-36 md:mt-[-300px] z-40'>
+           Explore
+        </Link>
       </div>
       <div>
         <Genration />
